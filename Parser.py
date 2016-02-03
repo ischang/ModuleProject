@@ -1,4 +1,5 @@
 import sys
+from jinja2 import Template
 import collections
 
 moduleFile = open('module.txt', 'r') 
@@ -33,6 +34,10 @@ orderedDict = collections.OrderedDict(sorted(programDict.items()))
 for key, value in orderedDict.iteritems():
 	print key
 	print value
+
+helloFile = open('hello.html', 'r') 
+template = Template(helloFile.read())
+print template.render(software = orderedDict)
 #print the paths of the lines when it's /software
 
 #print "hello from the other side"
