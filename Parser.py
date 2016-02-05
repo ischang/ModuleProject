@@ -1,6 +1,9 @@
 import sys
-from jinja2 import Template
+from jinja2 import Template, Environment, FileSystemLoader
 import collections
+import os
+
+THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 
 moduleFile = open('module.txt', 'r') 
 content = moduleFile.read()
@@ -35,9 +38,11 @@ for key, value in orderedDict.iteritems():
 	print key
 	print value
 
-helloFile = open('hello.html', 'r') 
-template = Template(helloFile.read())
-print template.render(software = orderedDict)
+#helloFile = open('index.html', 'r') 
+theTemplate = Environment(loader=FileSystemLoader(THIS_DIR), trim_blocks=True)
+#template = Template(helloFile.read())
+#print template.render(software = orderedDict)
+print theTemplate.get_template('layout.html').render(software = orderedDict)
 #print the paths of the lines when it's /software
 
 #print "hello from the other side"

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+	<ul id = "NICE">
+	  {% for package, versions in software.iteritems() %}
+	  <li>{{ package }}: 
+	  { print "versions" }
+	  {{ versions }}</li>
+	  {% endfor %}
+	</ul>
+{% endblock content %}
