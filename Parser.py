@@ -39,7 +39,7 @@ for key, value in orderedDict.iteritems():
 	print value
 
 #helloFile = open('index.html', 'r') 
-theTemplate = Environment(loader=FileSystemLoader(THIS_DIR), trim_blocks=True)
+theTemplate = Environment(loader=FileSystemLoader(THIS_DIR), trim_blocks=True, extensions = ['jinja2.ext.loopcontrols'])
 #template = Template(helloFile.read())
 #print template.render(software = orderedDict)
 helloFile = open('index.html', 'w')
