@@ -42,11 +42,9 @@ for key, value in orderedDict.iteritems():
 theTemplate = Environment(loader=FileSystemLoader(THIS_DIR), trim_blocks=True)
 #template = Template(helloFile.read())
 #print template.render(software = orderedDict)
-helloFile = open('index.html', 'w')
-
-helloFile.write(theTemplate.get_template('template.html').render(software = orderedDict))
+print theTemplate.get_template('template.html').render(software = orderedDict)
 #print the paths of the lines when it's /software
 
 #print "hello from the other side"
-helloFile.close()
+
 moduleFile.close() 
