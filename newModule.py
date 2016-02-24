@@ -6,7 +6,6 @@ import os
 
 depDict = dict()
 indDict = dict()
-meow = []
 
 depPath = "/software/modules/3.2.10/x86_64-linux-ubuntu14.04/Modules/3.2.10/modulefiles/"
 indPath = "/software/modules/modulefiles_static/"
@@ -17,31 +16,33 @@ moduleDep = os.walk(depPath).next()[1]
 #Java modules, run on all modules
 moduleInd = os.walk(indPath).next()[1]
 
-#dependent
-for root, dirs, files in os.walk(depPath):
-	if root is depPath:
-		continue
+def mainParse (path):
+	mainDict = dict()
 
-	#iterating over a slice copy of the list, or will modify original list and screw it up
-	for item in files[:]:
-		if os.path.islink(os.path.join(root,item)):
-			files.remove(item)
+	for root, dirs, files in os.walk(path):
+		if root is path:
+			continue
 
-	#normpath removes trailing slashes
-	#basename gives me last part of path after last slash
-	depDict[os.path.basename(os.path.normpath(root))] = files
+		#iterating over a slice copy of the list, or will modify original list and screw it up
+		for item in files[:]:
+			if os.path.islink(os.path.join(root,item)):
+				files.remove(item)
+			#will work on parsing files 
 
+		#normpath removes any trailing slashes
+		#basename gives me last part of path after last slash
+		mainDict[os.path.basename(os.path.normpath(root))] = files
 
-orderedDict = collections.OrderedDict(sorted(depDict.items()))
-for key, value in orderedDict.iteritems():
+	orderedDict = collections.OrderedDict(sorted(mainDict.items()))
+
+	return orderedDict
+
+depDict = mainParse(depPath)
+indDict = mainParse(indPath)
+
+for key, value in depDict.iteritems():
 	print key
 	print value
 
-#print "ind: " 
-#for file in moduleInd:
-#	depDict[file]
-#	print file
 
-#ignore link
 
-#def mainParse (path, dictionary)
