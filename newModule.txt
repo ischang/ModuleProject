@@ -1,0 +1,252 @@
+R
+{'version': ['.3.1.0.swp', 'local_libs', '.3.1.0.swo']}
+abyss
+{'version': ['1.5.2'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'abyss', 'dir': 'abyss'}
+allpathslg
+{'version': ['51298'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'allpathslg', 'dir': 'allpaths-lg'}
+amos
+{'version': ['3.1.0'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'AMOS', 'dir': 'amos'}
+anytag
+{'version': ['2.5.2'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'anytag', 'dir': 'anytag'}
+arachne
+{'version': ['46223'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'arachne', 'dir': 'arachne'}
+arraymaker
+{'version': ['1.1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'arraymaker', 'dir': 'arraymaker'}
+augustus
+{'version': ['3.0.3'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'augustus', 'dir': 'augustus'}
+bamtools
+{'version': ['2.3.0', '.2.3.0.swp'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'bamtools', 'dir': 'bamtools'}
+bbcp
+{'version': ['15.02.03.01.1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'bbcp', 'dir': 'bbcp'}
+bcftools
+{'version': ['1.2'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'bcftools', 'dir': 'bcftools'}
+bcl2fastq
+{'version': ['1.8.4', '2.16.0.10', '2.17.1.14'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'bcl2fastq', 'dir': 'bcl2fastq'}
+bedops
+{'version': ['2.4.11'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'bedops', 'dir': 'bedops'}
+bedtools2
+{'version': ['2.21.0'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'BEDTools2: a swiss army knife for genome arithmetic', 'dir': 'bedtools2'}
+bioutils
+{'version': ['1.0.9'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'bioutils', 'dir': 'bioutils'}
+blast
+{'version': ['2.2.30+', '2.2.29+', '2.2.31+'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'NCBI-BLAST+:  Basic Local Alignment Search Tool', 'dir': 'blast'}
+blast-legacy
+{'note': 'This is legacy blast!', 'version': ['2.2.26'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'blast-legacy', 'dir': 'blast'}
+blat
+{'note': 'This includes iBEST fastq patch', 'version': ['v.35-fastq', 'v.35'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'blat', 'dir': 'blat'}
+boost
+{'note': 'patched for gcc 4.6+', 'version': ['1.44.0'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Boost C++ Libraries', 'dir': 'boost'}
+bowtie
+{'version': ['1.1.1', '1.1.2'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Bowtie: An ultrafast memory-efficient short read aligner', 'dir': 'bowtie'}
+bowtie2
+{'version': ['2.2.3', '2.2.5', '2.2.4', '2.2.6', '2.0.0-beta7', '2.2.7'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Bowtie2: Fast and sensitive read alignment', 'dir': 'bowtie2'}
+bsseeker2
+{'version': ['2.0.9'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'BSseeker2', 'dir': 'bsseeker2'}
+busco
+{'version': ['1.1b1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'BUSCO', 'dir': 'busco'}
+bwa
+{'version': ['0.7.10', '0.6.2', '0.7.12', '0.5.7'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Burrows-Wheeler Aligner', 'dir': 'bwa'}
+canu
+{'version': ['1.0'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'canu', 'dir': 'canu'}
+cdhit
+{'version': ['4.6.1', '4.6.4'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'CD-HIT', 'dir': 'cdhit'}
+ceas
+{'version': ['1.0.2'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'ceas', 'dir': 'ceas'}
+cegma
+{'version': ['2.5'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'CEGMA', 'dir': 'cegma'}
+cgat
+{'version': ['0.2.4'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'cgat', 'dir': 'cgat'}
+circos
+{'version': ['0.67-1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Circos', 'dir': 'circos'}
+coral
+{'version': ['1.4'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'CORAL', 'dir': 'coral'}
+cufflinks
+{'version': ['2.2.1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Cufflinks: Transcript assembly, differential expression, and differential regulation for RNA-Seq', 'dir': 'cufflinks'}
+cutadapt
+{'version': ['1.8'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'cutadapt', 'dir': 'cutadapt'}
+dbg2olc
+{'version': ['165ae2'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'DBG2OLC', 'dir': 'dbg2olc'}
+delly
+{'version': ['0.5.9', '0.6.7', '0.7.2'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Delly', 'dir': 'delly'}
+deweylab-utils
+{'version': ['0.0.2'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Deweylab Utils', 'dir': 'deweylab-utils'}
+diamond
+{'version': ['0.7.9'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Diamond', 'dir': 'diamond'}
+discovar
+{'version': ['52218'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Discovar', 'dir': 'discovar'}
+discovardenovo
+{'version': ['52448'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Discovar De Novo', 'dir': 'discovardenovo'}
+discovarexp
+{'version': ['52219'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Discovar De Novo', 'dir': 'discovarexp'}
+dwgsim
+{'version': ['0.1.11'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'DWGSIM', 'dir': 'dwgsim'}
+ectools
+{'version': ['0.1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'ECTools', 'dir': 'ectools'}
+express
+{'version': ['1.5.1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'express', 'dir': 'express'}
+falcon
+{'note': 'type\\nsource \\$FALCON/bin/activate\\n to switch to the FALCON python virtualenv.', 'version': ['0.4.2'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'FALCON', 'dir': 'falcon'}
+fastx_toolkit
+{'version': ['0.0.14'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'fastx_toolkit', 'dir': 'fastx_toolkit'}
+flash
+{'version': ['1.2.11'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'FLASH', 'dir': 'flash'}
+flash2
+{'version': ['c41a82e'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'FLASH2', 'dir': 'flash2'}
+freebayes
+{'note': 'Bayesian haplotype-based polymorphism discovery and genotyping.  http://arxiv.org/abs/1207.3907)', 'version': ['g4233a23'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'freebayes', 'dir': 'freebayes'}
+galaxy
+{'version': ['1']}
+gaussian
+{'note': 'Please set the environment variable GAUSS_SCRDIR to your desired scratch space before running g09.', 'version': ['09'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'gaussian', 'dir': 'gaussian'}
+geneid
+{'version': ['1.4.4'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Gene ID', 'dir': 'geneid'}
+genometools
+{'version': ['1.5.7'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'GenomeTools', 'dir': 'genometools'}
+gfold
+{'version': ['1.1.4'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'gfold', 'dir': 'gfold'}
+gmap
+{'version': ['2014-10-16', '2015-06-23'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'GMAP/GSNAP', 'dir': 'gmap'}
+gnumap
+{'version': ['2.9.0'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'gnumap', 'dir': 'gnumap'}
+gnumaps
+{'version': ['0.1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'gnumaps', 'dir': 'gnumaps'}
+hisat
+{'version': ['0.1.7-beta'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'hisat', 'dir': 'hisat'}
+hmmer
+{'version': ['3.1b1', '2.3.2'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'HMMER', 'dir': 'hmmr'}
+homer
+{'version': ['4.7'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Homer: Software for motif discovery and next-gen sequencing analysis', 'dir': 'homer'}
+htseq
+{'version': ['0.6.1p2', '0.5.3p9'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'htseq', 'dir': 'htseq'}
+htslib
+{'version': ['1.1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'htslib', 'dir': 'htslib'}
+jellyfish
+{'version': ['2.2.3'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'jellyfish', 'dir': 'jellyfish'}
+kallisto
+{'version': ['0.42.2.1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'kallisto', 'dir': 'kallisto'}
+kentutils
+{'version': ['308'], 'os': 'x86_64-linux-ubuntu14.04', 'name': "UCSC Genome Browser 'Kent Utilities'", 'dir': 'kentutils'}
+khmer
+{'version': ['1.1', '2.0-rc1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'khmer', 'dir': 'khmer'}
+kraken
+{'version': ['0.10.5-beta'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'kraken', 'dir': 'kraken'}
+last
+{'version': ['621'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'last', 'dir': 'last'}
+leehom
+{'version': ['dfca9e6'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'leeHom', 'dir': 'leehom'}
+lighter
+{'version': ['1.0.6'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'lighter', 'dir': 'lighter'}
+macs2
+{'version': ['2.1.0.20140616'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'MACS2', 'dir': 'macs2'}
+mafft
+{'version': ['7.245'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'mafft', 'dir': 'mafft'}
+masurca
+{'version': ['2.3.2'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'masurca', 'dir': 'masurca'}
+meme
+{'version': ['4.10.0_1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'MEME', 'dir': 'meme'}
+meraculous
+{'version': ['2.0.5'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'meraculous', 'dir': 'meraculous'}
+meta
+{'version': [], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'PEAR - Paired-End reAd mergeR', 'dir': 'pear'}
+mirdeep2
+{'version': ['2.0.0.5'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'mirdeep2', 'dir': 'mirdeep2'}
+mothur
+{'version': ['1.36.1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'mothur', 'dir': 'mothur'}
+mt-toolbox
+{'version': ['4.1.2'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'mt-toolbox', 'dir': 'mt-toolbox'}
+mufin
+{'version': ['0.9.3'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'mufin', 'dir': 'mufin'}
+mummer
+{'version': ['3.23'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'mummer', 'dir': 'mummer'}
+ncbi-ngs
+{'note': 'part of the sra toolkit', 'version': ['1.0.0'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'ncbi-ngs', 'dir': 'ncbi-ngs'}
+ncbi-vdb
+{'note': 'part of the sra toolkit', 'version': ['2.4.2-4'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'ncbi-vdb', 'dir': 'ncbi-vdb'}
+olb
+{'version': ['1.9.4', '.1.9.4.swp'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'OLB', 'dir': 'olb'}
+pantherscore
+{'version': ['1.03'], 'os': 'static', 'name': 'pantherScore', 'dir': 'pantherscore'}
+pasa
+{'version': ['r20140417'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'PASA: Program to Assemble Spliced Alignments', 'dir': 'pasa'}
+pbcore
+{'version': ['1.2.7'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'pbcore', 'dir': 'pbcore'}
+pbdagcon
+{'version': ['ed6e2c3'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'pbdagcon', 'dir': 'pbdagcon'}
+pbsuite
+{'note': '"\x00set os ', 'version': ['.1.15.2.20.swp', '15.2.20'], 'name': 'pbsuite', 'dir': 'pbsuite'}
+pear
+{'version': [], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'PEAR - Paired-End reAd mergeR', 'dir': 'pear'}
+perl
+{'version': ['5.14.4', '5.14.4-mt', 'modules-5.18.2'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'perl', 'dir': 'perl'}
+perl-modules
+{'version': ['5.18.2'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'locally managed perl modules', 'dir': 'perl'}
+plink2
+{'version': ['1.90p'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'PLINK2', 'dir': 'plink2'}
+poretools
+{'version': ['0.5.1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Poretools', 'dir': 'poretools'}
+price
+{'version': ['1.2'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'PRICE (Paired-Read Iterative Contig Extension)', 'dir': 'price'}
+python
+{'version': ['2.7.6-ubuntu', '2.6.9'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'python', 'dir': 'python'}
+qiime
+{'version': ['1.9.1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'qiime', 'dir': 'qiime'}
+quip
+{'version': ['1.1.8'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'quip', 'dir': 'quip'}
+randfold
+{'version': ['2.0'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Randfold', 'dir': 'randfold'}
+rdnatools
+{'version': ['2a4cd4e'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'rdnatools', 'dir': 'rdnatools'}
+rsem
+{'version': ['1.2.18', '1.2.20'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'RSEM (RNA-Seq by Expectation-Maximization)', 'dir': 'rsem'}
+rseqc
+{'version': ['2.4', '.2.4.swp'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'RSeQC: An RNA-seq Quality Control Package', 'dir': 'rseqc'}
+sabre
+{'version': ['039a55e5'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'sabre', 'dir': 'sabre'}
+salmon
+{'note': 'this includes bugfixes from git, v0.5.0-15-g2862a65', 'version': ['0.5.0', '0.6.0'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'salmon', 'dir': 'salmon'}
+samtools
+{'version': ['1.1', '0.1.18', '0.1.19', '1.2'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'SAM Tools', 'dir': 'samtools'}
+scythe
+{'version': ['c128b19'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'scythe', 'dir': 'scythe'}
+seqtk
+{'version': ['1.0-r63-dirty'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'SeqTK: Toolkit for processing sequences in FASTA/Q formats', 'dir': 'seqtk'}
+sga
+{'version': ['0.10.13'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'sga', 'dir': 'sga'}
+sickle
+{'version': ['7667f147e6'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Sickle', 'dir': 'sickle'}
+skewer
+{'version': ['0.1.126-g88fb913'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'skewer', 'dir': 'skewer'}
+spades
+{'version': ['3.5.0'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'SPAdes', 'dir': 'spades'}
+sratoolkit
+{'version': ['2.4.2-3'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'sratoolkit', 'dir': 'sratoolkit'}
+star
+{'version': ['2.4.0h', '2.4.2a', '2.5.1b'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'STAR:  Spliced Transcripts Alignment to a Reference', 'dir': 'star'}
+stringtie
+{'version': ['1.0.4'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'stringtie', 'dir': 'stringtie'}
+subread
+{'version': ['1.4.6-p3'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'subread', 'dir': 'subread'}
+tabix
+{'version': ['0.2.6'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'tabix', 'dir': 'tabix'}
+tophat
+{'version': ['2.1.0', '2.0.13', '2.0.5'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'TopHat: A spliced read mapper for RNA-Seq', 'dir': 'tophat'}
+torrentsuite
+{'note': 'This build has only has select binaries (tmap and tvc) installed.  Email sysadmin@genomecenter.ucdavis.edu if you need any others installed.', 'version': ['4.6.11'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'torrentsuite', 'dir': 'torrentsuite'}
+transdecoder
+{'version': ['2.0.1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'TransDecoder', 'dir': 'transdecoder'}
+trinity
+{'version': ['2.0.6', 'r20140717', '2.1.1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Trinity RNA-SEQ', 'dir': 'trinityrnaseq'}
+vcflib
+{'version': ['7f1575e'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'vcflib', 'dir': 'vcflib'}
+vcftools
+{'version': ['0.1.13', '0.1.12b'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'vcftools', 'dir': 'vcftools'}
+velvet
+{'version': ['1.2.10'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'velvet', 'dir': 'velvet'}
+vt
+{'version': ['0.57'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'vt ', 'dir': 'vt'}
+wgs
+{'version': ['8.1', '8.3rc1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'wgs', 'dir': 'wgs'}
+wiggletools
+{'version': ['1.1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'wiggletools', 'dir': 'wiggletools'}
+wise2
+{'version': ['2.4.1'], 'os': 'x86_64-linux-ubuntu14.04', 'name': 'Wise2', 'dir': 'wise2'}

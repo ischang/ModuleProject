@@ -1,6 +1,7 @@
 import sys
 import collections
 import os
+import re
 
 #currently have removed all symlinks and mapped files to directories
 
@@ -16,28 +17,49 @@ moduleDep = os.walk(depPath).next()[1]
 #Java modules, run on all modules
 moduleInd = os.walk(indPath).next()[1]
 
-def fileParse (fileItem):
-	versionFile = open("fileItem", "r")
+def fileParse (root, filePath):
+	versionFile = open(os.path.join(root,filePath), "r")
 	versionContent = versionFile.read()
-	versionList = versionContent.split()
-	itemType = dict()
+	newDict = dict()
 
-	for index, part in enumerate(versionList):
-		if 'set' in part:
-			#item description is 2 away from set value
-			itemDescription = versionList[index+2]
-			#item is 1 away from set value
-			itemType[versionList[index+1]] = itemDescription
-		elif 'module-whatis' in part:
-			moduleWhatIs = versionList[index+1]
-		else: 
+	pattern = re.compile("set\s(\w+)\s\"(.+?)?\"", re.DOTALL)
+	results = re.findall(pattern, versionContent)
+
+	for item in results:
+		if 'swroot' in item[0]:
 			continue
+		elif '\n' in item[1]:
+			continue
+		elif item[0] == 'note':
+			newDict['description'] = item[1]
+			continue 
 
-	return itemType
+		newDict[item[0]]= item[1]
+
+	return newDict
+	#RETURN DICTIONARY
+	#do line by line instead
+	#versionList = versionContent.split()asfsd
+	#itemType = dict()
+#
+	#for index, part in enumerate(versionList):
+	#	if 'set' in part:
+	#		#item description is 2 away from set value
+	#		itemDescription = versionList[index+2]
+	#		#item is 1 away from set value
+	#		itemType[versionList[index+1]] = itemDescription
+	#	elif 'module-whatis' in part:
+	#		moduleWhatIs = versionList[index+1]
+	#	else: 
+	#		continue
+#
+	#return itemType
 
 def mainParse (path):
 	mainDict = dict()
 	versionsDict = dict()
+	fileDict = dict()
+	listAll = []
 
 	for root, dirs, files in os.walk(path):
 		if root is path:
@@ -49,15 +71,19 @@ def mainParse (path):
 				files.remove(item)
 
 			#ensures we only parse first item, since we don't need the rest
-			if index is 1:
-				versionsDict = fileParse(item)
+			if index is 0:
+				filesDict = fileParse(root, item)
 
 			#will work on parsing files 
 
 
 		#normpath removes any trailing slashes
 		#basename gives me last part of path after last slash
-		mainDict[os.path.basename(os.path.normpath(root))] = files 
+		#replaces version with the full amount of versions
+		filesDict["version"] = files
+		filesDict["name"] = os.path.basename(os.path.normpath(root))
+		filesDict.pop("dir", None)
+		mainDict[os.path.basename(os.path.normpath(root))] = filesDict
 		#append versionsDict
 
 	orderedDict = collections.OrderedDict(sorted(mainDict.items()))
