@@ -5,6 +5,7 @@ set name "foobar"
 set version "2.9999"
 set description "a quick brown fox jumped over
 a lazy dog"
+set os "ubuntu"
 set tags "blah, blah, blah"
 """
 
