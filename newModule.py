@@ -11,7 +11,7 @@ indDict = dict()
 
 depPath = "/software/modules/3.2.10/x86_64-linux-ubuntu14.04/Modules/3.2.10/modulefiles/"
 indPath = "/software/modules/modulefiles_static/"
-
+#depPath = "/home/phreell/Desktop/moduleind/modulefiles"
 #Using os.walk and [1] to isolate directories ONLY in this folder. Use [0] to get root and [2] for any files.
 #returns a list
 moduleDep = os.walk(depPath).next()[1]
@@ -23,22 +23,55 @@ def fileParse (root, filePath):
 	versionContent = versionFile.read()
 	newDict = dict()
 
+	#Regex the variables into results
 	pattern = re.compile("set\s(\w+)\s\"(.+?)?\"", re.DOTALL)
 	results = re.findall(pattern, versionContent)
 
+	if 'static' in root:
+		osType = 'independent'
+
+	elif 'x86_64-linux-ubuntu14.04' in root:
+		osType = 'x86_64-linux-ubuntu14.04'
+
+	else:
+		osType = ''
+
 	for item in results:
+		#why doesn't R let me insert OS?? suspecT!
+		print item 
+		tempItem = []
+		tempItem.append(osType)
+		newDict['os'] = tempItem
+
+		#don't want swroot, so continue
 		if 'swroot' in item[0]:
 			continue
+		#\n appears when there's no description
+		#only when in code -- is there a better way to parse this out?
 		elif '\n' in item[1]:
 			continue
+		#change note to description per adam's format
 		elif item[0] == 'note':
 			newDict['description'] = item[1]
 			continue 
 
+		elif item[0] == 'os':
+			if not osType:
+				continue 
+
+		if item[0] == 'tags':
+			newDict['tags'] = item[1].split(',')
+			continue
+		else:
+			newDict['tags'] = []
+
 		newDict[item[0]]= item[1]
 
-	return newDict
+	newDict['cluster'] = []
 
+	return newDict
+#all cluster cabernet so far??? only one we care about until 16 comes out
+	
 def mainParse (path):
 	mainDict = dict()
 	versionsDict = dict()
@@ -64,9 +97,10 @@ def mainParse (path):
 		#normpath removes any trailing slashes
 		#basename gives me last part of path after last slash
 		#replaces version with the full amount of versions
-		filesDict["version"] = files
+		filesDict["versions"] = files
 		filesDict["name"] = os.path.basename(os.path.normpath(root))
 		filesDict.pop("dir", None)
+		filesDict.pop("version", None)
 		mainDict[os.path.basename(os.path.normpath(root))] = filesDict
 		#append versionsDict
 
@@ -74,8 +108,25 @@ def mainParse (path):
 
 	return orderedDict
 
+def jsonDump (jsonDict, pathJson): 
+	with open(pathJson,'w') as fp:
+		json.dump([], fp)
+	with open(pathJson,'r') as fp2:
+		fp3 = json.load(fp2)
+	tempDict = dict()
+	for key, value in jsonDict.iteritems():
+		tempDict = jsonDict[key]
+		with open(pathJson, mode = 'w') as fp2:
+			fp3.append(tempDict)
+			json.dump(fp3, fp2)
+
 depDict = mainParse(depPath)
 indDict = mainParse(indPath)
+
+jsonDump(depDict, "depResults.json")
+jsonDump(indDict, "indResults.json")
+
+
 
 #The ugliest code in all of humanity is below (and it's still not the right format!): 
 #for key, value in depDict.iteritems():
@@ -96,23 +147,6 @@ indDict = mainParse(indPath)
 #	sys.stdout.write ("}")
 #	print (",")
 
-#-----------------------------------------------------
-#this works but incorrect format????
-
-#with open('results.json','w') as fp:
-#	json.dump([], fp)
-
-#with open('results.json','r') as fp2:
-#	fp3 = json.load(fp2)
-
-#for key, value in depDict.iteritems():
-#	tempDict = dict()
-#	tempDict = depDict[key]
-#	for key2 in tempDict:
-#		with open('results.json', mode = 'w') as fp2:
-#			fp3.append(tempDict)
-#			json.dump(fp3, fp2)
-#------------------------------------------------------
 
 #for key, value in depDict.iteritems():
 #	print key
