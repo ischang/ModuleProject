@@ -37,8 +37,7 @@ def fileParse (root, filePath):
 		osType = ''
 
 	for item in results:
-		#why doesn't R let me insert OS?? suspecT!
-		print item 
+		#why doesn't R let me insert OS?? suspecT! 
 		tempItem = []
 		tempItem.append(osType)
 		newDict['os'] = tempItem
@@ -66,8 +65,6 @@ def fileParse (root, filePath):
 			newDict['tags'] = []
 
 		newDict[item[0]]= item[1]
-
-	newDict['cluster'] = []
 
 	return newDict
 #all cluster cabernet so far??? only one we care about until 16 comes out
@@ -99,6 +96,7 @@ def mainParse (path):
 		#replaces version with the full amount of versions
 		filesDict["versions"] = files
 		filesDict["name"] = os.path.basename(os.path.normpath(root))
+		#pop version and dir, since we want to replace it with 
 		filesDict.pop("dir", None)
 		filesDict.pop("version", None)
 		mainDict[os.path.basename(os.path.normpath(root))] = filesDict
@@ -126,7 +124,18 @@ indDict = mainParse(indPath)
 jsonDump(depDict, "depResults.json")
 jsonDump(indDict, "indResults.json")
 
+with open("depResults.json", 'r') as dep:
+	dep2 = json.load(dep)
 
+with open ("indResults.json", "r") as ind:
+	ind2 = json.load(ind)
+
+with open ("results.json", "w") as fp:
+	json.dump([], fp)
+
+with open("results.json", "w") as fp2:
+	dep2.append(ind2)
+	json.dump(dep2, fp2)
 
 #The ugliest code in all of humanity is below (and it's still not the right format!): 
 #for key, value in depDict.iteritems():
@@ -164,10 +173,6 @@ jsonDump(indDict, "indResults.json")
 #	else:
 #		with open('result.json', 'w') as fp:
 #			json.dump(depDict[key], fp)#
-
-
-
-
 
 	#RETURN DICTIONARY
 	#do line by line instead
